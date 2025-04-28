@@ -9,16 +9,19 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
 
-        <title>Portfolio website complete</title>
+
+        <title>Emmanuel Deoye's Portfolio</title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="https://emmanueldeoyecv.tiiny.site" class="nav__logo">EMMANUEL ADEOYE</a>
+                    <a href="https://emmanueldeoyecv.tiiny.site" class="nav__logo">EMMANUEL DEOYE</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -41,9 +44,9 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Emmanuel</span><br> Java Developer</h1>
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Emmanuel</span><br> Software Developer</h1>
 
-                    <a href="https://emmanueldeoyecv.tiiny.site" class="button">DOWNLOAD CV</a>
+                    <a href="https://emmanueldeoyecv.tiiny.site" class="button" id="sticky-contact">DOWNLOAD CV</a>
                 </div>
 
                 <div class="home__social">
@@ -59,11 +62,32 @@
                         </mask>
                         <g mask="url(#mask0)">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/blue.png"/>
+                            <image id="home-image-slide" class="home__blob-img" x="50" y="60" href="assets/img/blue.png"/>
                         </g>
                     </svg>
                 </div>
             </section>
+            
+            <section class="conditions section">
+    
+    <div class="conditions__container">
+        <div class="conditions__track">
+            <span class="condition">Java</span>
+            <span class="condition">Kotlin</span>
+            <span class="condition">HTML</span>
+            <span class="condition">CSS</span>
+            <span class="condition">Javascript</span>
+            <span class="condition">Node</span>
+            <span class="condition">Firebase</span>
+            <span class="condition">MySQL</span>
+            <span class="condition">Sketchware</span>
+            <span class="condition">Virtual Studio Code</span>
+            
+            
+            
+        </div>
+    </div>
+</section>
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
@@ -75,8 +99,8 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">What should you know about me?</h2>
-                        <p class="about__text">I'm a results-driven and dedicated Java Software Developer with a solid foundation in Java, object-oriented programming, and software design patterns. Experienced in contributing to the development of quality software applications and eager to further expand my skills and knowledge within the Java ecosystem.</p>           
+                        <h2 class="about__subtitle">I'am Emmanuel</h2>
+                        <p class="about__text">Results-driven and dedicated developer with a passion for creating robust and user-centric solutions. My expertise spans across native Android development with Java and Kotlin, and front-end web development using HTML, CSS, and JavaScript. I'm committed to writing clean, efficient code and continuously learning to stay at the forefront of technology.</p>           
                     </div>                                   
                 </div>
             </section>
@@ -88,7 +112,7 @@
                 <div class="skills__container bd-grid">          
                     <div>
                         <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Experienced in Java, Android Studio, and Sketchware for comprehensive mobile app development. Proficient in HTML and CSS for front-end web design, with familiarity in Visual Studio Code. Combines native Android expertise with web development skills for versatile project delivery.
+                        <p class="skills__text">My core skills include a strong command of Java and Kotlin for robust backend and Android development. I am also proficient in front-end technologies like HTML, CSS, and JavaScript, enabling me to create engaging user interfaces. I have experience with databases like MySQL and Firebase, and I'm comfortable using tools like Visual Studio Code and Sketchware.
 </p>
                         
                         <div class="skills__data">
@@ -97,13 +121,24 @@
 
                                 <span class="skills__name">JAVA</span>
                             </div>
-                            <div class="skills__bar skills__js">
+                            <div class="skills__bar skills__java">
                                 
                             </div>
                             <div>
                                 <span class="skills__percentage">80%</span>
                             </div>
                         </div>
+                        
+                        <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-android skills__icon"></i>
+                            <span class="skills__name">Kotlin (Android)</span>
+                        </div>
+                        <div class="skills__bar skills__kotlin"></div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
                         
                         <div class="skills__data">
                             <div class="skills__names">
@@ -114,7 +149,7 @@
 
                             </div>
                             <div>
-                                <span class="skills__percentage">80%</span>
+                                <span class="skills__percentage">90%</span>
                             </div>
                         </div>
                         <div class="skills__data">
@@ -135,53 +170,94 @@
                                 <i class='bx bxl-javascript skills__icon' ></i>
                                 <span class="skills__name">JAVASCRIPT</span>
                             </div>
-                            <div class="skills__bar skills__ux">
+                            <div class="skills__bar skills__js">
                                 
                             </div>
                             <div>
-                                <span class="skills__percentage">25%</span>
+                                <span class="skills__percentage">60%</span>
                             </div>
                         </div>
                     </div>
                     
-                    <div>              
-                        <img src="assets/img/work4.jpg" alt="" class="skills__img">
+                    
+                    
                     </div>
-                </div>
             </section>
+                    
+                    <section class="conditions section">
+    <div class="conditions__container">
+        <div class="conditions__track">
+            <i class="fab fa-java condition" title="Java"></i>
+            <i class="fab fa-android condition" title="Kotlin"></i> <i class="fab fa-html5 condition" title="HTML"></i>
+            <i class="fab fa-css3-alt condition" title="CSS"></i>
+            <i class="fab fa-js condition" title="Javascript"></i>
+            <i class="fab fa-node-js condition" title="Node"></i>
+            <i class="fas fa-fire condition" title="Firebase"></i> <i class="fas fa-database condition" title="MySQL"></i>
+            <i class="fas fa-mobile-alt condition" title="Sketchware"></i> <i class="fas fa-code condition" title="Virtual Studio Code"></i> </div>
+    </div>
+</section>
+
+                
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">FEATURED PROJECTS</h2>
+    <h2 class="section-title">FEATURED PROJECTS</h2>
 
-                <div class="work__container bd-grid">
-                    <a href="https://www.mediafire.com/file/uapsboca3vqqskv/Lova.apk/file" class="work__img">
-                        <h2>LOVA</h2>
-                        <img src="assets/img/work1.png" alt="">
-                        <p>Lova is an innovative ecommerce Android app designed to make gifting easier and more convenient.</p>
-                        <p><b>TOOLS: Java, Android Studio, Firebase, Sketchware</b></p>
-                    </a>
-                    <a href="https://www.mediafire.com/file/w78ja2a6w9stlwy/Vender.apk/file" class="work__img">
-                        <h2>VENDER</h2>
-                        <img src="assets/img/work2.png" alt="">
-                        <p>An innovative mobile app platform that empowers users to connect with others, share ideas, and stay updated on trending topics while earning real-time monetary incentives.</p>
-                        <p><b>TOOLS: Java, Android Studio, Firebase, Sketchware</b></p>
-                    </a>
-                    <a href="https://tolexarstherapy.com.ng" class="work__img">
-                        <h2>TOLEXARS WEB</h2>
-                        <img src="assets/img/work3.jpg" alt="">
-                        <p>I designed and developed a website for Tolexars Therapy Services, a pioneering organization dedicated to providing compassionate therapy services to individuals living with disabilities.</p>
-                        <p><b>TOOLS: HTML, CSS Virtual Studio Code, TrebEdit</b></p>
-                    </a>
-                        <a href="#" class="work__img">
-                        <h2>PERSONAL PORTFOLIO</h2>
-                        <img src="assets/img/work4.jpg" alt="">
-                        <p> My personal portfolio website to showcase my projects</p>
-                        <p><b>TOOLS: HTML, CSS, Virtual Studio Code.</b></p>
-                    </a>
-                    
-                </div>
-            </section>
+    <div class="work__grid">
+        <div class="work__item">
+            <div class="work__image-container">
+                <img src="assets/img/work1.png" alt="">
+                <div class="work__title-overlay">LOVA</div>
+            </div>
+            <div class="work__details">
+                <h2>LOVA</h2>
+                <p>Lova is an innovative ecommerce Android app designed to make gifting easier and more convenient.</p>
+                <p><b>TOOLS: Java, Android Studio, Firebase, Sketchware</b></p>
+                <a href="https://drive.google.com/file/d/1-2hexF0FwckZewdhm5y2QARuU-vAd8XY/view?usp=drivesdk" target="_blank" class="work__button">View Project</a>
+            </div>
+        </div>
+
+        <div class="work__item">
+            <div class="work__image-container">
+                <img src="assets/img/work2.png" alt="">
+                <div class="work__title-overlay">VENDER</div>
+            </div>
+            <div class="work__details">
+                <h2>VENDER</h2>
+                <p>An innovative mobile app platform that empowers users to connect with others, share ideas and trending topics while earning real-time monetary incentives.</p>
+                <p><b>TOOLS: Java, Android Studio, Firebase, Sketchware</b></p>
+                <a href="#" class="work__button">View Project</a>
+            </div>
+        </div>
+
+        <div class="work__item">
+            <div class="work__image-container">
+                <img src="assets/img/work3.jpg" alt="">
+                <div class="work__title-overlay">TOLEXARS WEB</div>
+            </div>
+            <div class="work__details">
+                <h2>TOLEXARS WEB</h2>
+                <p>I designed and developed a website for Tolexars Therapy Services, an organization dedicated to compassionate therapy services to individuals living with disability.</p>
+                <p><b>TOOLS: HTML, CSS Virtual Studio Code, TrebEdit</b></p>
+                <a href="https://tolexarstherapy.com.ng" target="_blank" class="work__button">View Project</a>
+            </div>
+        </div>
+
+        <div class="work__item">
+            <div class="work__image-container">
+                <img src="assets/img/work4.jpg" alt="">
+                <div class="work__title-overlay">PERSONAL PORTFOLIO</div>
+            </div>
+            <div class="work__details">
+                <h2>PERSONAL PORTFOLIO</h2>
+                <p> My personal portfolio website to showcase my projects</p>
+                <p><b>TOOLS: HTML, CSS, Virtual Studio Code.</b></p>
+                <a href="#" class="work__button">View Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
@@ -200,17 +276,15 @@
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Emmanuel Adeoye</p>
+            <p class="footer__title">Emmanuel Deoye</p>
             
-            <div class="home__data">
-                    <a href="https://emmanueldeoyecv.tiiny.site" class="button">DOWNLOAD CV</a>
-                </div>
+            
                 <div class="footer__social">
                 <a href="https://www.facebook.com/share/1669J4bzt3/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
                 <a href="https://www.instagram.com/itzz_deoye?igsh=bzdmbDNwdTRqZjEw" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="https://x.com/deoye_d?t=13qGEbzKiViIzBvVliFUuQ&s=09" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Emmanuel Adeoye. All rigths reserved</p>
+            <p class="footer__copy">&#169; Emmanuel Deoye. All rigths reserved</p>
         </footer>
 
 
